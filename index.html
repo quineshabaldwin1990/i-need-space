@@ -9,10 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.js"></script>
+    <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 </head>
 <body>
 
-    <div class="content">
+    <div class="content"> 
 
         <h1>
             When can I see a certain satellite?
@@ -86,9 +89,29 @@
             </div>
         </div>
 
+        <div class="section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rise</th>
+                        <th>Culminate</th>
+                        <th>Set</th>
+                        <th>visible</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="time">
+                        <td id="rise-time"></td>
+                        <td id="culminate-time"></td>
+                        <td id="set-time"></td>
+                        <td id="visible"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 
-    <script src="apiKey.js"></script>
+    
     <script src="main.js"></script>
 </body>
 </html>
